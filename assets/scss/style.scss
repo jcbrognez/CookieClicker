@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+html{
+    background: -webkit-linear-gradient(90deg, rgb(12, 17, 22), rgb(41, 43, 44));
+    background: linear-gradient(90deg, rgb(12, 17, 22), rgb(41, 43, 44));
+    background-image: url("../img/fond.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    p{
+        color:white;
+    }
+}
+header{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+        
+    h1{
+        color:white;
+        
+    }
+}
+
+footer{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    ul{
+        display:flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        li{
+            margin-left: 1rem;
+            list-style: none;
+        }
+    }
+    img{
+        position:absolute;
+        bottom:0px;
+        right:0px;
+    }
+}
+img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    &:active{
+        transform: scale(0.8);
+        transition: transform .5s;
+
+    } 
+}
+.amelioration{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    button{
+        width:30vh;
+        height:12vh;
+        color:white;
+        background-color: grey;
+        align-items:center;
+        justify-content: center;
+        margin-top:2rem;
+        &:hover{
+            border-bottom: 2px solid #00FFFF;
+            box-shadow: 3px 2px 3px #1E90FF;
+        }
+        &:hover:disabled{
+            border-bottom: 2px solid #a5001b;
+            box-shadow: 3px 2px 3px #ff1e1e;
+        }
+        &:disabled{
+            color:rgb(59, 59, 59);
+        }
+    }
+}
+.count{
+    color: red;
+    text-align: center;
+    margin-top: 2em;
+    border: 1px solid black;
+    margin-left: 20em;
+    margin-right: 20em;
+}
+.reset{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.reset:hover{
+    background-color: red;
+}
+.target{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    p{
+        color:white;
+    }
+    span{
+        color:white;
+    }
+}
+#target{
+    color:white;
+}
+.blueBar{
+    width: 80vh;
+    margin:0 auto;
+
+}
